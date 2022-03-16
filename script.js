@@ -1,3 +1,6 @@
+// Var for default grid size
+let gridSize = 16;
+
 // Reference each div in page
 const header = document.querySelector('.header');
 const btnWrapper = document.querySelector('.btnWrapper');
@@ -27,7 +30,11 @@ const createGrid = function(gridSize){
             const gridCol = document.createElement('div');
             gridCol.classList.add('gridCol');
             gridRow.appendChild(gridCol); 
+            gridCol.addEventListener("mouseover", function(gridCol){
+                gridCol.target.style.backgroundColor="black";
+            });
         }
     }
 };
-createGrid(64);
+
+createGrid(gridSize);
