@@ -1,0 +1,11 @@
+* {
+    background-color: lightblue;
+}
+.header {
+    color: lemonchiffon;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
