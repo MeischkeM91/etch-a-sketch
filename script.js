@@ -16,3 +16,18 @@ rainbowBtn.textContent="Rainbow"
 // add buttons to page (inside btnWrapper)
 btnWrapper.appendChild(clearBtn);
 btnWrapper.appendChild(rainbowBtn);
+
+// Function to create the grid to color
+const createGrid = function(gridSize){
+    for(let i=0; i<gridSize;i++){
+        const gridRow = document.createElement('div');
+        gridRow.classList.add('gridRow');
+        gridWrapper.appendChild(gridRow);
+        for(let i=0; i<gridSize;i++){
+            const gridCol = document.createElement('div');
+            gridCol.classList.add('gridCol');
+            gridRow.appendChild(gridCol); 
+        }
+    }
+};
+createGrid(4);

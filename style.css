@@ -36,3 +36,13 @@
     min-width: 80%;
     height: auto;
 }
+.gridRow{
+    display: flex;
+}
+.gridWrapper div{
+    border: 1px solid black;
+    height: 100px;
+}
+.gridCol{
+    width: 25%;
+}
