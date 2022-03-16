@@ -30,4 +30,4 @@ const createGrid = function(gridSize){
         }
     }
 };
-createGrid(4);
+createGrid(64);

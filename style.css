@@ -31,18 +31,22 @@
     border-radius: 20px;
 }
 .gridWrapper{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
     border: 3px solid #262626;
-    min-width: 80%;
-    height: auto;
+    width: 500px;
+    height: 500px;
 }
 .gridRow{
     display: flex;
+    justify-content: space-around;
+    height: 100%;
 }
 .gridWrapper div{
     border: 1px solid black;
-    height: 100px;
 }
 .gridCol{
-    width: 25%;
+    background-color: white;
+    height: 100%;
+    width: 100%;
 }
