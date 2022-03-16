@@ -1,11 +1,38 @@
 * {
     background-color: lightblue;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
 .header {
     color: lemonchiffon;
     font-family: 'Lobster', cursive;
     font-size: 100px;
     text-align: center;
+    margin-top: 30px;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
+}
+.btnWrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+}
+.btnWrapper button{
+    background-color: lemonchiffon;
+    width: 200px;
+    padding: 8px 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    border: 5px solid #262626;
+    border-radius: 20px;
+}
+.gridWrapper{
+    background-color: white;
+    border: 3px solid #262626;
+    min-width: 80%;
+    height: auto;
 }
