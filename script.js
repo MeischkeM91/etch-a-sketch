@@ -5,6 +5,7 @@ const header = document.querySelector('.header');
 const btnWrapper = document.querySelector('.btnWrapper');
 const gridWrapper = document.querySelector('.gridWrapper');
 
+
 // clearGrid function will clear and rebuild the grid depending on size prompt
 const clearGrid = function(){
     const newGridSize = prompt('Please enter the desired grid size (Max. 64): ', '');
@@ -14,6 +15,17 @@ const clearGrid = function(){
     else{
         gridWrapper.innerHTML='';
         createGrid(newGridSize);
+    };
+};
+
+// rainbowColor will active random color when hovering the grid
+const rainbowColor = function(){
+    const gridCell = document.querySelectorAll('.gridCol');
+    for(let i=0;i<gridCell.length;i++){
+        gridCell[i].addEventListener('mouseover', function(e){
+            const randColor = Math.floor(Math.random()*16777215).toString(16);
+            e.target.style.backgroundColor= `#${randColor}`;
+        });
     };
 };
 
@@ -27,6 +39,7 @@ clearBtn.addEventListener('click',clearGrid);
 const rainbowBtn = document.createElement('button');
 rainbowBtn.classList.add('rainbowBtn');
 rainbowBtn.textContent='Rainbow';
+rainbowBtn.addEventListener('click',rainbowColor);
 
 // add buttons to page (inside btnWrapper)
 btnWrapper.appendChild(clearBtn);
