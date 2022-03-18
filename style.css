@@ -30,6 +30,13 @@
     border: 5px solid #262626;
     border-radius: 20px;
 }
+.btnWrapper button:hover{
+    background-color: rgb(255, 246, 168);
+}
+.btnWrapper button:active{
+    background-color: rgb(255, 246, 168);
+    transform: translateX(2px) translateY(2px);
+}
 .gridWrapper{
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@
     height: 100%;
 }
 .gridWrapper div{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 .gridCol{
     background-color: white;
